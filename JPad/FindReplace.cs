@@ -50,7 +50,9 @@ namespace JPad
             Btn_RepAll.Visible = !f;
         }
 
-        public bool FindOnly { set
+        public bool FindOnly
+        {
+            set
             {
                 FindOrReplace(value);
             }
@@ -59,6 +61,12 @@ namespace JPad
         private void FindReplace_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void FindReplace_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
         }
     }
 }

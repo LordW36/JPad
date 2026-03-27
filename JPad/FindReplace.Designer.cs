@@ -186,6 +186,7 @@ namespace JPad
             Name = "FindReplace";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Replace";
+            FormClosing += FindReplace_FormClosing;
             Load += FindReplace_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
