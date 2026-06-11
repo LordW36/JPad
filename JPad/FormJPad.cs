@@ -403,6 +403,7 @@ namespace JPad
             FindRDialog.FindOnly = true;
             FindRDialog.Text = "Find...";
             FindRDialog.Show();
+            FindRDialog.BringToFront();
         }
 
         private void Menu_FindNext_Click(object sender, EventArgs e)
@@ -452,6 +453,7 @@ namespace JPad
             FindRDialog.FindOnly = false;
             FindRDialog.Text = "Replace...";
             FindRDialog.Show();
+            FindRDialog.BringToFront();
         }
 
         private void Menu_WordWrap_Click(object sender, EventArgs e)
